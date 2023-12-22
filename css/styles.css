@@ -3,9 +3,9 @@ colors used
     primary (black): # 000000;
     secondary (white): # F9F7F2;
     tertiary (green): #6F8E8B
-    */
+*/
 body {
-    background-color: lightgray;
+    background-color: white;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -81,3 +81,58 @@ body {
         background-color: #ff7f50;
         color: #ffffff;
       }
+header {
+    position: relative;
+    background-color: #ffe4c4;
+    padding: 0px 0px  10px 0px;
+    text-align: center;
+    }
+ nav > ul {
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    }
+    nav > ul > li {
+        display: inline-block;
+      }
+    nav > ul > li > a {
+        padding: 0 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #4a4a4a;
+      }
+/* Layout styling */
+.container {
+    padding: 0 15px;
+  }
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+  #hero h1 {
+    text-align: center; /* Centers text */
+  }
+  .center {
+    text-align: center;
+  }  
+  .logo {
+    max-width: 250px;
+  }
+  #hero {
+    background-color: #ffe4c4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3)  ; 
+}
+  

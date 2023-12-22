@@ -14,9 +14,10 @@
     </head>
     <body>
         <header> 
-                <img src="img/logo.svg" alt="Jennifer Schroeder"></header>
-                <nav> 
-                    <ul>
+            <div class="css-box-shadow">   
+                <img src="img/logo.svg" alt="Jennifer Schroeder" class="logo">
+                <nav>
+                    <ul class="navigation">
                         <li><a href="index.html"> Work</a></li>
                         <li><a href="about.html"> About</a></li>
                         <li><a href="#contact"> Contact</a></li>
@@ -25,42 +26,47 @@
             </div>
         </header>
     <main>
-        <div title="main">
-            <section title="intro">
-                <h1>
-                    Hello, I'm Jennifer Schroeder.
-                    <span>
-                        I am a user interface designer and studio artist.
-                    </span>
-                </h1>
-                <p>I am a UI designer based out of Austin, TX with a passion to create highly functional and aesthetically pleasing products.
-                </p>
+        <div id="main">
+            <section title="hero">
+                <div id="hero">
+                    <div class="container">
+                        <h1>
+                            Hello, I'm Jennifer Schroeder.
+                            <span>
+                            I am a user interface designer and studio artist.
+                            </span>
+                        </h1>
+                        <p>I am a UI designer based out of Austin, TX with a passion to create highly functional and aesthetically pleasing products.
+                        </p>
+                    </div>
+                </div>
             </section>
-            <section title="my work">
-                <div>
-                    <article title="Outdoorsy">
+            <section id="work">
+                <div class="container">
+                        <h2>My Work</h2>
+                          <div class="row">
+                        <article title="Outdoorsy">
                         <div title="column img>">
                             <picture>
                                 <source srcset="img/outdoorsy/outdoorsycover2.jpg" media="(max-width:767px)">
                                 <img src="img/outdoorsy/outdoorsycover2.jpg" alt="outdoorsy cover">
                             </picture>
                         </div>
-                        <div>
+                        <div class="row">
                             <h3>Outdoorsy</h3>
                             <p>
                                 Outdoorsy is a responsive web app that uses location to suggest outdoor activities to the user.
                             </p>
                             <p>
-                                Skills used: Competative Analysis, User Reesearch and Personas, Wireframing, Usability Testing, Prototyping, Responsove Design.
+                                Skills used: Competative Analysis, User Reesearch and Personas, Wireframing, Usability Testing, Prototyping, Responsive Design.
                             </p>
                             <a href="outdoorsy.html" class="button">View project</a>
-
                         </div>
                     </article>
                     <article title="Space"></article>
                     <div title="column img">
                         <picture>
-                            <source srcset="img/space/spacecover2" media="(max-width:767px)">
+                            <source srcset="img/space/spacecover2.jpg" media="(max-width:767px)">
                             <img src="img/space/spacecover2.jpg" alt="Space Cover">
                         </picture>
                     </div>
@@ -78,8 +84,8 @@
             </section>
         </div>
     </main>
-    <footer>
-        <div>
+    <footer id="contact"> 
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>
                 Do you like my work and want to discuss ideas? Please get in touch!
@@ -93,13 +99,13 @@
         </div>
         <div>
             <a href="LINKEDIN-URL" target="_blank">
-                <img src="img/linkedinicon.svg" alt="linkedin">
+                <img src="img/linkedinicon.svg" alt="linkedin" style="width: 32px; height: 32px;">
             </a>
             <a href="FACEBOOK-URL" target="_blank">
-                <img src="img/facebookicon.svg" alt="placeholder">
+                <img src="img/facebookicon.svg" alt="placeholder" style="width: 32px; height: 32px;">
             </a>
             <a href="INSTAGRAM-URL" target="_blank">
-                <img src="img/instagram_icon.svg" alt="instagram">
+                <img src="img/instagram_icon.svg" alt="instagram" style="width: 32px; height: 32px;">
             </a>
         </div>
         <p>Copyright Jennifer Schroeder 2023</p>

@@ -81,9 +81,10 @@ body {
         background-color: #ff7f50;
         color: #ffffff;
       }
+
 header {
     position: relative;
-    background-color: #ffe4c4;
+    background-color: white;
     padding: 0px 0px  10px 0px;
     text-align: center;
     }
@@ -136,3 +137,7 @@ header {
 	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3)  ; 
 }
   
+.social {
+    width: 32px;
+    height: auto;
+}

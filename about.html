@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <meta charset="UTF-8">
         <meta name="author" content="Jennifer Schroeder">
         <meta name="description" content="Short description using keywords">
@@ -8,28 +14,30 @@
     </head>
     <body>
         <header> 
-            <div>
-                <img src="img/logo.svg" alt="Jennifer Schroeder"></header>
+            <div class="css-box-shadow"> 
+                <a href="index.html">
+                <img src="img/logo.svg" alt="Jennifer Schroeder" class="logo">
+                </a>
                 <nav> 
-                    <ul>
-                        <li><a href="#"> Work</a></li>
-                        <li><a href="#"> About</a></li>
-                        <li><a href="#"> Contact</a></li>
+                    <ul class="navigation">
+                        <li><a href="index.html"> Work</a></li>
+                        <li><a href="about.html"> About</a></li>
+                        <li><a href="#contact"> Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
     <main>
-        <div>
+        <div class="container">
             <div>
                 <h1>About Me</h1>
             </div>
         </div>
-        <div>
+        <div class="container">
             <div>
                 <picture>
                     <source media="(max-width:500px)" srcset="img/headshot.jpg">
-                    <img src="img/headshot.jpg" alt="Profile Image">
+                    <img src="img/headshot.jpg" alt="Profile Image" style="width: 300px; height: auto" >
                 </picture>
             </div>
             <div>
@@ -117,7 +125,7 @@
         </div>
     </main>
     <footer>
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>
                 Do you like my work and want to discuss ideas? Please get in touch!
@@ -131,18 +139,18 @@
                 <a href="tel:+5126805366">+5126805366</a>
             </p>
         </div>
-        <div>
+        <div class="container">
             <a href="LINKEDIN-URL" target="_blank">
-                <img src="img/linkedinicon.svg" alt="linkedin">
+                <img class="social" src="img/linkedinicon.svg" alt="linkedin">
             </a>
             <a href="FACEBOOK-URL" target="_blank">
-                <img src="img/facebookicon.svg" alt="facebook">
+                <img class="social" src="img/facebookicon.svg" alt="placeholder">
             </a>
             <a href="INSTAGRAM-URL" target="_blank">
-                <img src="img/instagram_icon.svg" alt="instagram">
+                <img class="social" src="img/instagram_icon.svg" alt="instagram">
             </a>
+            <p>Copyright Jennifer Schroeder 2023</p>
         </div>
-        <p>Copyright Jennifer Schroeder 2023</p>
     </footer>
     </body>
 </html>

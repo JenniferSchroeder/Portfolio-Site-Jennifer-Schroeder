@@ -1,3 +1,4 @@
+
 "use strict"
 
 module.exports = {
@@ -130,5 +131,3 @@ module.exports = {
     "value-list-max-empty-lines": 0,
   },
 }
-@JenniferSchroeder
-Comment

@@ -2,7 +2,7 @@
 colors used
     primary (black): # 000000;
     secondary (white): # F9F7F2;
-    tertiary (green): #6F8E8B
+    tertiary (green): #6fbebb
 */
 header {
   position: relative;
@@ -77,17 +77,13 @@ img {
 /* Button Styling */
 .button {
   display: inline-block;
-
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #6F8E8B;
-  color: #fff;
-
-  /* needed to override the default link color */
+  background-color: #fff;
+  color: #000;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border: 2px solid black;
+  border-radius: 20px;
 
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -121,7 +117,8 @@ a {
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: gray;
+  border: gray;
 }
 
 a:hover {
@@ -138,7 +135,8 @@ a:active {
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration: underline;
+  text-decoration:underline;
+  transition: all;
 }
 
 /* Navigtion Styling */
@@ -158,7 +156,6 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
-  
 }
 
 /* Layout styling */
@@ -180,6 +177,11 @@ nav>ul>li>a {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
+  padding-left: 30px;
+}
+
+#contact .row {
+  text-align: center;
 }
 
 #hero h1 {
@@ -279,7 +281,8 @@ X-large devices (1440px or larger)
 
 [class*="col-"] {
   float: left;
-  padding: 0px;
+  padding: 10px;
+  width: 40%;
 }
 
 @keyframes color-change {
@@ -330,32 +333,4 @@ X-large devices (1440px or larger)
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-/* Border X get width  */
-div.borderXwidth a:before,
-div.borderXwidth a:after {
-  position: absolute;
-  opacity: 0;
-  width: 0%;
-  height: 2px;
-  content: '';
-  background: #FFF;
-  transition: all 0.3s;
-}
-
-div.borderXwidth a:before {
-  left: 0px;
-  top: 0px;
-}
-
-div.borderXwidth a:after {
-  right: 0px;
-  bottom: 0px;
-}
-
-div.borderXwidth a:hover:before,
-div.borderXwidth a:hover:after {
-  opacity: 1;
-  width: 100%;
 }

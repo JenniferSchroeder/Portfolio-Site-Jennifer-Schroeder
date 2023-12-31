@@ -57,12 +57,12 @@ h2 {
   font-weight: 700;
 }
 
-h2 {
+h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
 
-h2 {
+h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
@@ -95,7 +95,17 @@ img {
   /* Reduces the opacity of the button to 80% */
   color: #fff;
   text-decoration: none;
+  background-color: black;
 }
+
+/*.button.nav {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  border-radius: 0px;
+  border-color: transparent;
+  background-color: transparent;
+}  This was my attempt at animating the nav*/
 
 .button.contact {
   background-color: transparent;
@@ -177,7 +187,6 @@ nav>ul>li>a {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
-  padding-left: 30px;
 }
 
 #contact .row {
@@ -250,7 +259,7 @@ Medium devices (640px and larger)
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 40%;
     padding: 10px;
   }
 
@@ -272,6 +281,10 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+  .col-lg-8 {
+    width: 50%;
+    padding: 10px;
+  }
 }
 
 /* ==============================
@@ -279,10 +292,14 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
+.col-xl-4-8 {
+  width: 50%;
+  padding: 10px;
+}
+
 [class*="col-"] {
   float: left;
   padding: 10px;
-  width: 40%;
 }
 
 @keyframes color-change {

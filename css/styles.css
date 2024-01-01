@@ -23,7 +23,11 @@ header {
 }
 
 main {
-  padding-top: 99px;
+  padding-top: 0px;
+}
+
+#outdoorsy-main {
+  font-family: 'Urbanist', sans-serif;
 }
 
 .social {
@@ -45,20 +49,21 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
+  margin-top: 10px;
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.3.em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 1.75em;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.50em;
   font-weight: 400;
 }
 
@@ -108,19 +113,19 @@ img {
 }  This was my attempt at animating the nav*/
 
 .button.contact {
-  background-color: transparent;
-  color: #ff7f50;
+  background-color: #737575;
+  color: #fff;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #fff;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: black;
   color: #fff;
 }
 
 a {
-  color: #ff7f50;
+  color: black;
   text-decoration: none;
   /* No underlining */
 }
@@ -138,7 +143,7 @@ a:hover {
 }
 
 a:active {
-  /* selected link */
+  selected link 
   color: #994c30;
 }
 
@@ -167,6 +172,43 @@ nav>ul>li>a {
   font-weight: 700;
   color: #4a4a4a;
 }
+/* trying to animate navigation 
+
+a li:after,
+a li:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  display: block;
+  height: 1px;
+  transition: all 0.3s ease;
+  margin-top: 2px;
+  transition: all 300ms ease-in;
+}
+
+a li:after {
+  bottom: 25%;
+  left: 0;
+}
+
+a li:before {
+  top: 25%;
+  right: 0;
+}
+
+a li:hover::after {
+  width: 100%;
+  height: 1px;
+  bottom: 25%;
+  background-color: #000;
+}
+a li:hover::before {
+  width: 100%;
+  height: 1px;
+  top: 25%;
+  background-color: #000;
+}
+*/
 
 /* Layout styling */
 .container {
@@ -174,7 +216,7 @@ nav>ul>li>a {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 25px 0 0 0;
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -189,12 +231,22 @@ nav>ul>li>a {
   border-bottom: 1px solid #4a4a4a;
 }
 
-#contact .row {
+#contact .container {
+  color: white;
   text-align: center;
+  background-color: #5a5c5c;
+  margin-top: 0%;
+  padding-bottom: 50px;
+}
+
+#contact h2 {
+  padding-top: 24px;
+  margin-top: 0%;
 }
 
 #hero h1 {
   text-align: center;
+  font-size: 2em;
   /* Centers text */
 }
 
@@ -220,6 +272,21 @@ nav>ul>li>a {
 .social {
   width: 32px;
   height: auto;
+}
+
+.mockup {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.outdoorsy {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-top: solid 1px #C84F09;
 }
 
 /* ==============================
@@ -257,9 +324,12 @@ Medium devices (640px and larger)
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  h3 {
+    margin-top: 0px;
+  }
 
   .col-md-6 {
-    width: 40%;
+    width: 45%;
     padding: 10px;
   }
 
@@ -292,7 +362,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
-.col-xl-4-8 {
+.col-xl-4 {
   width: 50%;
   padding: 10px;
 }

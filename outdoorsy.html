@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
@@ -30,7 +30,7 @@
         </div>
     </header>
     <main>
-        <div class="outdoorsy-main"> </div>
+        <div id="outdoorsy-main">
         <div class="container">
             <picture>
                 <source srcset="img/outdoorsy/title.png" media="(max-width:767px)">
@@ -38,50 +38,52 @@
             </picture>
         </div>
         <div class="container">
-            <h2>Introduction</h2>
-            <ul>
-                <li>Duration: 2.5 months</li>
-                <li>Role: UX/UI Designer & Researcher</li>
-                <li>Tools: Pen & Paper, UsabilityHub, Figma</li>
-                <li>Objective: To design a responsive web app for location-based recommendations as part of the Career
-                    Foundry UI Design Course</li>
-            </ul>
-        </div>
-        <div class="container">
-            <h2>Outdoorsy Case Study</h2>
-            <h2>Objective</h2>
-            <p>
-                This is a responsive web app that uses location to suggest outdoor activities to the user. It will give
-                the user information
-                about the location and activity so that the user is prepared for the activity.
-            </p>
-            <h2>Hypothesis</h2>
-            <p>
-                I believe people want to be able to find an activity outdoors with ease and in a timely manner that
-                meets their needs and wants.
-                By narrowing down activities to the outdoor arena, it will be less overwhelming and intimidating for
-                people to use this product.
-                Suggesting a variety of activities with advanced search results enables users to find an activity that
-                they will enjoy and remember.
-            </p>
-            <h2>Overview</h2>
-            <p>
-                As an outdoor enthusiast, I would love to inspire people to get outside and connect with nature wherever
-                they may be. The app is
-                appropriate for anyone from couch potato to outdoor expert. The app features multiple functionalities
-                appropriate for the user to
-                get the most out of their outdoor experience. The user will be able to feel confident and excited about
-                spending time outdoors no
-                matter what activities they are interested in. This app will provide them with the information needed to
-                be prepared for their adventure.
-            </p>
-            <h2>Users Can...</h2>
-            <ul>
-                <li>Search for outdoor activities with ease</li>
-                <li>Access a map and directions of the area for easy navigation</li>
-                <li>Access logistical information for preparedness</li>
-                <li>Bookmark places of interest for future reference</li>
-            </ul>
+            <div class="row"><!-- open row that holds (2) columns  -->
+                <div class="column col-md-6 col-lg-8"><!-- open first column (used for image) -->
+                    <picture>
+                        <source srcset="img/outdoorsy/mockup.png" media="(max-width: 767px)">
+                        <img  class="mockup" src="img/outdoorsy/mockup.png" alt="mockup">
+                    </picture>
+                </div>
+                <div class="column col-md-6 col-lg-8"><!-- open second column (used for text) -->
+                    <h2>Hypothesis</h2>
+                    <p>
+                        I believe people want to be able to find an activity outdoors with ease and in a timely manner that
+                        meets their needs and wants.
+                        By narrowing down activities to the outdoor arena, it will be less overwhelming and intimidating for
+                        people to use this product.
+                        Suggesting a variety of activities with advanced search results enables users to find an activity that
+                        they will enjoy and remember.
+                    </p>
+                </div>
+             <div class="row"><!-- open row that holds (2) columns  -->
+                <div class="column col-md-6 col-lg-8"><!-- open first column (used for image) -->
+                    <h2>Overview</h2>
+                    <p>
+                        As an outdoor enthusiast, I would love to inspire people to get outside and connect with nature wherever
+                        they may be. The app is
+                        appropriate for anyone from couch potato to outdoor expert. The app features multiple functionalities
+                        appropriate for the user to
+                        get the most out of their outdoor experience. The user will be able to feel confident and excited about
+                        spending time outdoors no
+                        matter what activities they are interested in. This app will provide them with the information needed to
+                        be prepared for their adventure.
+                    </p>
+                    <h2 class="outdoorsy">Users Can...</h2>
+                    <ul>
+                        <li>Search for outdoor activities with ease</li>
+                        <li>Access a map and directions of the area for easy navigation</li>
+                        <li>Access logistical information for preparedness</li>
+                        <li>Bookmark places of interest for future reference</li>
+                    </ul>
+                </div>
+                <div class="column col-md-6 col-lg-8"><!-- open second column (used for text) -->
+                    <picture>
+                        <source srcset="img/outdoorsy/mockup2.png" media="(max-width:767px)">
+                        <img class="mockup" src="img/outdoorsy/mockup2.png" alt="mockup">
+                    </picture>
+                </div>
+            </div><!--end row-->
         </div>
         <div class="container">
             <h2>Design Process</h2>
@@ -104,14 +106,16 @@
             </p>
             <picture>
                 <source srcset="img/outdoorsy/comp.png" media="(max-width: 767 px)">
-                <img src="img/outdoorsy/comp.png" alt="tripadvisor and Foursquare mockups">
+                <img class="mockup" src="img/outdoorsy/comp.png" alt="tripadvisor and Foursquare mockups">
             </picture>
         </div>
         <div class="container">
-            <picture>
-                <source srcset="img/outdoorsy/bike.png" media="(max-width: 767 px)">
-                <img src="img/outdoorsy/bike.png" alt="bike">
-            </picture>
+            <div class="row">
+                <picture>
+                    <source srcset="img/outdoorsy/bike.png" media="(max-width: 767 px)">
+                    <img src="img/outdoorsy/bike.png" alt="bike">
+                </picture>
+            </div>
         </div>
         <div class="container">
             <h2>User Testing</h2>
@@ -173,7 +177,7 @@
             <h2>Prototyping</h2>
             <p>I prototyped the user flows using the drawn wireframes and performed user testing.</p>
             <picture>
-                <source srcset="img/outdoorsy/protoyping.png" media="(max-width:767px)">
+                <source srcset="img/outdoorsy/prototyping.png" media="(max-width:767px)">
                 <img src="img/outdoorsy/prototyping.png" alt="Protoyping Image">
             </picture>
         </div>
@@ -194,28 +198,45 @@
         </div>
         <div class="container">
             <h3>Feedback and Corrections</h3>
-            <picture>
-                <source srcset="img/outdoorsy/feedback.png" media="(max-width:767px)">
-                <img src="img/outdoorsy/feedback.png" alt="Feedback and corrections image">
-            </picture>
-            <strong>Problem:</strong>
-            <br>
-            Confusion about how to save a location
-            <br>
-            <br>
-            <strong>Solution:</strong>
-            <br>
-            Change the icon from a heart to a bookmark
-            <br>
-            <br>
-            <strong>Problem:</strong>
-            <br>
-            Icons at th head of the screen are confusing
-            <br>
-            <br>
-            <strong>Solution:</strong>
-            <br>
-            Added a colored bar to more clearly define the space
+            <div class="row"><!-- open row that holds (2) columns  -->
+                <div class="column col-md-6 col-lg-8"><!-- open first column (used for image) -->
+                    <br>
+                    Problem:
+                    <br>
+                    Confusion about how to save a location
+                    <br>
+                    <br>
+                    Solution:
+                    <br>
+                    Change the icon from a heart to a bookmark
+                    </br>
+                </div>
+                <div class="column col-md-6 col-lg-8"><!-- open second column (used for image) -->
+                    <picture>
+                        <source srcset="img/outdoorsy/lf-wireframes-feedback.png" media="(max-width:767px)">
+                        <img class="mockup" src="img/outdoorsy/lf-wireframes-feedback.png" alt="Feedback and corrections image">
+                    </picture>
+                </div>
+            </div><!--end row-->
+            <div class="row"><!-- open row that holds (2) columns  -->
+                <div class="column col-md-6 col-lg-8"><!-- open first column (used for image) -->
+                    <br>
+                    Problem:
+                    <br>
+                    Icons at th head of the screen are confusing
+                    <br>
+                    <br>
+                    <strong>Solution:</strong>
+                    <br>
+                    Added a colored bar to more clearly define the space
+                </div>
+                <div class="column col-md-6 col-lg-8"><!-- open second column (used for image) -->
+                    <picture>
+                        <source srcset="img/outdoorsy/mf-wireframes-feedback.png" media="(max-width:767px)">
+                        <img class="mockup" src="img/outdoorsy/mf-wireframes-feedback.png" alt="Feedback and corrections image">
+                    </picture>
+                </div>
+            </div>
         </div>
         <div class="container">
             <h2>Style Guide</h2>
@@ -251,6 +272,8 @@
             <strong>Processes:</strong> User-centered design
             <br>
             <strong>Solution:</strong> Continue to involve users in the design process throughout the project
+            <br>
+            <br>
             <h3>What didn't go well?</h3>
             <p>I struggled with translating the wire-frames into the prototype. I had a couple of iterations for several
                 screens and had a hard time
@@ -293,21 +316,19 @@
         </div>
         <div class="container">
             <picture>
-                <source srcset="img/outdoorsy/map.png" media="(max-width:767px)">
-                <img src="img/outdoorsy/map.png" alt="map background">
-            </picture>
-            <picture>
-                <source srcset="img/outdoorsy/map-mockups.svg" media="(max-width:767px)">
-                <img src="img/outdoorsy/map-mockups.svg" alt="mockups with maps">
+                <source srcset="img/outdoorsy/maps.png" media="(max-width:767px)">
+                <img src="img/outdoorsy/maps.png" alt="map background">
             </picture>
         </div>
         <div>
-            <h2>Design</h2>
-            <p>Designed for all platforms so users can find their place outdoors from anywhere</p>
-            <picture>
-                <source srcset="img/outdoorsy/responsive-mockups.svg" media="(max-width:767px)">
-                <img src="img/outdoorsy/responsive-mockups.svg" alt="responsive mockups">
-            </picture>
+            <div class="container">
+                <h2>Design</h2>
+                <p>Designed for all platforms so users can find their place outdoors from anywhere</p>
+                <picture>
+                    <source srcset="img/outdoorsy/responsive.png" media="(max-width:767px)">
+                    <img src="img/outdoorsy/responsive.png" alt="responsive mockups">
+                </picture>
+            </div>
         </div>
         </div>
         </div>
@@ -320,7 +341,7 @@
                     Do you like my work and want to discuss ideas? Please get in touch!
                 </p>
                 <p>
-                    <a href="mailto:schroed.jenn2gmail.com" class="button contact">Send me an email</a>
+                    <a href="mailto:schroed.jenn@gmail.com" class="button contact">Send me an email</a>
                 <p>
                     Call:
                     <a href="tel:+5126805366">+5126805366</a>
@@ -336,7 +357,7 @@
                         <img class="social" src="img/instagram_icon.svg" alt="instagram">
                     </a>
                 </div>
-                    <p center>Copyright Jennifer Schroeder 2023</p>
+                    <p center>Copyright Jennifer Schroeder 2023-2024</p>
             </div>
         </div>
     </footer>

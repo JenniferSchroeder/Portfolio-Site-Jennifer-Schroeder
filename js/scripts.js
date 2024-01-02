@@ -1,9 +1,11 @@
 console.log ("Hi! Welcome to My Portfolio Site")
 var person = {
-    name: "Jennifer Schroeder",
+    name: "Jennifer",
     age: 46,
-    hobbies: "camping, making art"
+    hobbies: "camping, arting, music",
   };
 
-  console.log (person)
-
+console.log(person)
+for (var i = 1; i <= 100; i++) {
+    console.log(i);
+  }

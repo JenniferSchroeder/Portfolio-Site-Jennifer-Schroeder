@@ -9,7 +9,6 @@ header {
   background-color: #ffe4c4;
   padding: 0px;
   margin: 0px;
-  text-align: center;
 
   .css-box-shadow {
     width: [object Object]px;
@@ -156,21 +155,50 @@ a:focus {
 
 /* Navigtion Styling */
 nav>ul {
-  display: inline-block;
-  width: 100%;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+}
+
+ /* Responsive */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 /* trying to animate navigation 
 
@@ -255,7 +283,8 @@ a li:hover::before {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 150px;
+  padding: 20px 20px 20px 30px
 }
 
 #hero {
@@ -292,7 +321,7 @@ a li:hover::before {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 10px 0 13px;
@@ -311,6 +340,22 @@ Medium devices (640px and larger)
     padding-right: 10px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav>ul>li {
+    display: inline-block;
+
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   #hero span {
     display: block;
   }
@@ -320,6 +365,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
+    max-width: 300px;
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -337,6 +383,7 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 }
+
 
 /* ==============================
 Large devices (1024px or larger)

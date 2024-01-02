@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/45aa0c0791.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="author" content="Jennifer Schroeder">
     <meta name="description" content="Short description using keywords">
@@ -17,16 +18,19 @@
 <body id="about-page">
     <header>
         <div class="css-box-shadow">
-            <a href="index.html">
-                <img src="img/logo.svg" alt="Jennifer Schroeder" class="logo">
-            </a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html"> Work</a></li>
-                    <li><a href="about.html"> About</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Jennifer Schroeder" class="logo">
+                </a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html"> Work</a></li>
+                        <li><a href="about.html"> About</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>

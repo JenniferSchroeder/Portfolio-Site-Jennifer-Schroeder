@@ -1,19 +1,19 @@
 /*
 colors used
     primary (black): # 000000;
-    secondary (white): # F9F7F2;
+    secondary (white): #F9F7F2;
     tertiary (green): #6fbebb
 */
 header {
   position: relative;
-  background-color: #ffe4c4;
+  background-color: #F9F7F2;
   padding: 0px;
   margin: 0px;
 
   .css-box-shadow {
     width: [object Object]px;
     height: [object Object]px;
-    background: #F8F8F8;
+    background:  #fff;
     border: solid #BDBDBD 1px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
@@ -54,6 +54,7 @@ h4 {
 h1 {
   font-size: 2.3.em;
   font-weight: 700;
+  padding-top: 40px;
 }
 
 h2 {
@@ -182,7 +183,7 @@ nav>ul>li>a {
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-right: 0
+  padding-right: 10px;
 }
 
 .navtoggle.responsive li  {
@@ -288,7 +289,7 @@ a li:hover::before {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color:#F9F7F2
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -324,7 +325,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    padding: 10px 0 13px;
+    padding: 0px;
   }
 
   .container {

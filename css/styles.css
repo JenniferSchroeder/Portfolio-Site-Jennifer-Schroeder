@@ -5,7 +5,8 @@ colors used
     tertiary (green): #6fbebb
 */
 header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   background-color: #F9F7F2;
   padding: 0px;
   margin: 0px;
@@ -27,6 +28,20 @@ main {
 
 #outdoorsy-main {
   font-family: 'Urbanist', sans-serif;
+}
+#outdoorsy-main h2 {
+  font-weight: 200;
+}
+.top{
+  padding-top: 220px;
+}
+
+#outdoorsy-main h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  padding-top: 40px;
+  border-bottom: 2px solid #C84F09;
 }
 
 .social {
@@ -72,11 +87,32 @@ h4 {
   font-weight: 400;
 }
 
+.center {
+  text-align: center;
+}
+
+.hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color: #C84F09;
+}
+
 /* Image Stying */
 img {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.quote {
+  text-align: center;
+  font-size: x-large;
+
 }
 
 /* Button Styling */
@@ -125,7 +161,7 @@ img {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   /* No underlining */
 }
@@ -181,9 +217,9 @@ nav>ul>li>a {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 45px;
   font-size: 20px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .navtoggle.responsive li  {
@@ -195,7 +231,7 @@ nav>ul>li>a {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid gray;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -260,12 +296,18 @@ a li:hover::before {
   border-bottom: 1px solid #4a4a4a;
 }
 
-#contact .container {
+#work .row-space {
+  padding-bottom: 25px;
+  border-bottom: none;
+}
+
+#contact {
   color: white;
   text-align: center;
   background-color: #5a5c5c;
   margin-top: 0%;
   padding-bottom: 50px;
+  width: 100%;
 }
 
 #contact h2 {
@@ -276,6 +318,7 @@ a li:hover::before {
 #hero h1 {
   text-align: center;
   font-size: 2em;
+  padding-top: 220px;
   /* Centers text */
 }
 
@@ -313,11 +356,11 @@ a li:hover::before {
   width: 50%;
 }
 
-.outdoorsy {
+/*.outdoorsy {
   padding-bottom: 8px;
   margin-bottom: 8px;
   border-top: solid 1px #C84F09;
-}
+}*/
 
 /* ==============================
 Medium devices (640px and larger)
@@ -379,6 +422,10 @@ Medium devices (640px and larger)
     width: 45%;
     padding: 10px;
   }
+  .col-md-4 {
+    width: 30%;
+    padding: 10px;
+  }
 
   #about-page h3 {
     margin-top: 0;
@@ -403,7 +450,18 @@ Large devices (1024px or larger)
     width: 50%;
     padding: 10px;
   }
+
+  .col-lg-4 {
+    width: 30%;
+    padding: 10px;
+  }
+
+  #hero p {
+    display: block;
+    text-align: center;
+  }
 }
+
 
 /* ==============================
 X-large devices (1440px or larger)

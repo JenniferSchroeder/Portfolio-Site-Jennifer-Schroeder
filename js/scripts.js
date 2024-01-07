@@ -1,9 +1,4 @@
 console.log ("Hi! Welcome to My Portfolio Site")
-var person = {
-    name: "Jennifer",
-    age: 46,
-    hobbies: "camping, arting, music",
-  };
 
 
   function menuToggle() {

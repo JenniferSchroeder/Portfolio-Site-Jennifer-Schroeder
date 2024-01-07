@@ -1,401 +1,581 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/45aa0c0791.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="author" content="Jennifer Schroeder">
-    <meta name="description" content="Short description using keywords">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Urbanist:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/45aa0c0791.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jennifer Schroeder" />
+    <meta name="description" content="Short description using keywords" />
     <title>Outdoorsy</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="css-box-shadow">
-            <div class="navtoggle" id="myNavtoggle">
-                <a href="index.html">
-                    <img src="img/logo-white.svg" alt="Jennifer Schroeder" class="logo">
-                </a>
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="index.html"> Work</a></li>
-                        <li><a href="about.html"> About</a></li>
-                        <li><a href="#contact"> Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="css-box-shadow">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              src="img/logo-white.svg"
+              alt="Jennifer Schroeder"
+              class="logo"
+            />
+          </a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html"> Work</a></li>
+              <li><a href="about.html"> About</a></li>
+              <li><a href="#contact"> Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-        <div id="outdoorsy-main">
+      <div id="outdoorsy-main">
         <div class="container">
-            <div class="top">
-                <picture>
-                    <source srcset="img/outdoorsy/title.png" media="(max-width:767px)">
-                    <img src="img/outdoorsy/title.png" alt="Outdoorsy by Jennifer Schroeder">
-                </picture>
+          <div class="top">
+            <picture>
+              <source
+                srcset="img/outdoorsy/title.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/outdoorsy/title.png"
+                alt="Outdoorsy by Jennifer Schroeder"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <!-- open row that holds (2) columns  -->
+            <div class="column col-md-6 col-lg-8">
+              <!-- open first column (used for text) -->
+              <h2>Hypothesis</h2>
+              <p>
+                I believe people want to be able to find an activity outdoors
+                with ease and in a timely manner that meets their needs and
+                wants. By narrowing down activities to the outdoor arena, it
+                will be less overwhelming and intimidating for people to use
+                this product. Suggesting a variety of activities with advanced
+                search results enables users to find an activity that they will
+                enjoy and remember.
+              </p>
+              <h2>Overview</h2>
+              <p>
+                As an outdoor enthusiast, I would love to inspire people to get
+                outside and connect with nature wherever they may be. The app is
+                appropriate for anyone from couch potato to outdoor expert. The
+                app features multiple functionalities appropriate for the user
+                to get the most out of their outdoor experience. The user will
+                be able to feel confident and excited about spending time
+                outdoors no matter what activities they are interested in. This
+                app will provide them with the information needed to be prepared
+                for their adventure.
+              </p>
+              <h2>Users Can...</h2>
+              <ul>
+                <li>Search for outdoor activities with ease</li>
+                <li>
+                  Access a map and directions of the area for easy navigation
+                </li>
+                <li>Access logistical information for preparedness</li>
+                <li>Bookmark places of interest for future reference</li>
+              </ul>
             </div>
-        </div>
-        <div class="container">
-            <div class="row"><!-- open row that holds (2) columns  -->
-                <div class="column col-md-6 col-lg-8"><!-- open first column (used for text) -->
-                    <h2>Hypothesis</h2>
-                    <p>
-                        I believe people want to be able to find an activity outdoors with ease and in a timely manner that
-                        meets their needs and wants.
-                        By narrowing down activities to the outdoor arena, it will be less overwhelming and intimidating for
-                        people to use this product.
-                        Suggesting a variety of activities with advanced search results enables users to find an activity that
-                        they will enjoy and remember.
-                    </p>      
-                    <h2>Overview</h2>
-                    <p>
-                        As an outdoor enthusiast, I would love to inspire people to get outside and connect with nature wherever
-                        they may be. The app is
-                        appropriate for anyone from couch potato to outdoor expert. The app features multiple functionalities
-                        appropriate for the user to
-                        get the most out of their outdoor experience. The user will be able to feel confident and excited about
-                        spending time outdoors no
-                        matter what activities they are interested in. This app will provide them with the information needed to
-                        be prepared for their adventure.
-                    </p>
-                    <h2>Users Can...</h2>
-                    <ul>
-                        <li>Search for outdoor activities with ease</li>
-                        <li>Access a map and directions of the area for easy navigation</li>
-                        <li>Access logistical information for preparedness</li>
-                        <li>Bookmark places of interest for future reference</li>
-                    </ul>
-            </div><!--end row-->
-             <div class="column col-md-6 col-lg-4"><!-- open first column (used for image) -->
-                <picture>
-                    <source srcset="img/outdoorsy/mockup4.png" media="(max-width: 767px)">
-                    <img  class="mockup" src="img/outdoorsy/mockup4.png" alt="mockup">
-                </picture>
-                <picture>
-                    <source srcset="img/outdoorsy/mockup6.png" media="(max-width: 767px)">
-                    <img  class="mockup1" src="img/outdoorsy/mockup6.png" alt="mockup">
-                </picture>
-            </div>    
-        </div>
-        <div class="container">
-            <div class="row"><!-- open row that holds (2) columns  -->
-                <h2>Design Process</h2>
-                <picture>
-                    <source srcset="img/outdoorsy/design-process.svg" media="(max-width:767px)">
-                    <img src="img/outdoorsy/design-process.svg" alt="Design Process">
-                </picture>
+            <!--end column-->
+            <div class="column col-md-6 col-lg-4">
+              <!-- open first column (used for image) -->
+              <picture>
+                <source
+                  srcset="img/outdoorsy/mockup4.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="mockup"
+                  src="img/outdoorsy/mockup4.png"
+                  alt="mockup"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="img/outdoorsy/mockup6.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="mockup1"
+                  src="img/outdoorsy/mockup6.png"
+                  alt="mockup"
+                />
+              </picture>
             </div>
+          </div>
+          <!--end row-->
         </div>
         <div class="container">
-            <div class="row"><!-- open row that holds (2) columns  -->
-                <h2>Competetive Analysis</h2>
-                <div class="column col-md-6 col-lg-7"><!-- open first column (used for text) -->
-                    <p>
-                        I conducted a competitive analysis on <strong>Tripadvisor</strong> and <strong>Foursquare</strong> to
-                        gain insight to the direction of my
-                        design by identifying what works and what doesn’t work with these apps.
-                    </p>
-                    <p>
-                        Using <strong>SWOT</strong> and defining the key objectives, overall strategies, and market advantages a
-                        marketing profile and UX analysis
-                        was defined.
-                    </p>
-                </div>
-                <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
-                    <picture>
-                        <source srcset="img/outdoorsy/comp.png" media="(max-width: 767 px)">
-                        <img class="mockup2" src="img/outdoorsy/comp.png" alt="tripadvisor and Foursquare mockups">
-                    </picture>
-                </div>
+          <div class="row">
+            <!-- open row that holds (2) columns  -->
+            <h2>Design Process</h2>
+            <picture>
+              <source
+                srcset="img/outdoorsy/design-process.svg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/outdoorsy/design-process.svg"
+                alt="Design Process"
+              />
+            </picture>
+          </div>
         </div>
         <div class="container">
+          <div class="row">
+            <!-- open row that holds (2) columns  -->
+            <h2>Competetive Analysis</h2>
+            <div class="column col-md-6 col-lg-7">
+              <!-- open first column (used for text) -->
+              <p>
+                I conducted a competitive analysis on
+                <strong>Tripadvisor</strong> and <strong>Foursquare</strong> to
+                gain insight to the direction of my design by identifying what
+                works and what doesn’t work with these apps.
+              </p>
+              <p>
+                Using <strong>SWOT</strong> and defining the key objectives,
+                overall strategies, and market advantages a marketing profile
+                and UX analysis was defined.
+              </p>
+            </div>
+            <div class="column col-md-6 col-lg-5">
+              <!-- open second column (used for text) -->
+              <picture>
+                <source
+                  srcset="img/outdoorsy/comp.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="mockup2"
+                  src="img/outdoorsy/comp.png"
+                  alt="tripadvisor and Foursquare mockups"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="container">
             <div class="row">
-                <picture>
-                    <source srcset="img/outdoorsy/bike.png" media="(max-width: 767 px)">
-                    <img src="img/outdoorsy/bike.png" alt="bike">
-                </picture>
+              <picture>
+                <source
+                  srcset="img/outdoorsy/bike.png"
+                  media="(max-width: 767px)"
+                />
+                <img src="img/outdoorsy/bike.png" alt="bike" />
+              </picture>
             </div>
-        </div>
-        <div class="container">
+          </div>
+          <div class="container">
             <h2>User Testing</h2>
             <p>
-                Who, what, why, where, when, how, and how much were derived and user personas were created. User
-                interviews were conducted.
+              Who, what, why, where, when, how, and how much were derived and
+              user personas were created. User interviews were conducted.
             </p>
-        </div>
-        <div class="container">
+          </div>
+          <div class="container">
             <h3>User Personas</h3>
             <div class="row">
-                <div class="column col-md-4 col-lg-4">
-                    <picture>
-                        <source srcset="img/outdoorsy/persona1.png" media="(max-width:300px)">
-                        <img src="img/outdoorsy/persona1.png" alt="Persona 1">
-                    </picture>
-                </div>
-                <div class="column col-md-4 col-lg-4">
-                    <picture>
-                        <source srcset="img/outdoorsy/persona2.png" media="(max-width:300px)">
-                        <img src="img/outdoorsy/persona2.png" alt="Persona Two">
-                    </picture>
-                </div>
-                <div class="column col-md-4 col-lg-4">
-                    <picture>
-                        <source srcset="img/outdoorsy/persona3.png" media="(max-width:300px)">
-                        <img src="img/outdoorsy/persona3.png" alt="Persona Two">
-                    </picture>
-                </div>
-        </div>
-        <div class="container">
-            <br>
-            <br>
-            <div class="hr"></div>
-            <h3>Synthesis</h3>
-            <div class="quote">
-                <em>"I don't want the world to know me, I want to know the world."</em>
-                <br>
+              <div class="column col-md-4 col-lg-4">
+                <picture>
+                  <source
+                    srcset="img/outdoorsy/persona1.png"
+                    media="(max-width:300px)"
+                  />
+                  <img src="img/outdoorsy/persona1.png" alt="Persona 1" />
+                </picture>
+              </div>
+              <div class="column col-md-4 col-lg-4">
+                <picture>
+                  <source
+                    srcset="img/outdoorsy/persona2.png"
+                    media="(max-width:300px)"
+                  />
+                  <img src="img/outdoorsy/persona2.png" alt="Persona Two" />
+                </picture>
+              </div>
+              <div class="column col-md-4 col-lg-4">
+                <picture>
+                  <source
+                    srcset="img/outdoorsy/persona3.png"
+                    media="(max-width:300px)"
+                  />
+                  <img src="img/outdoorsy/persona3.png" alt="Persona Two" />
+                </picture>
+              </div>
             </div>
-            <div class="row">
-                <div class="column col-md-6 col-lg-5"><!-- open first column (used for text) -->
-                    <h4>Frustrations</h4>
-                    <ul>
-                        <li>Not structured well</li>
-                        <li>Confusing</li>
-                        <li>Too much information</li>
-                        <li>Ads</li>
-                        <li>Bad directions</li>
-                    </ul>
-                    <h4>Needs</h4>
-                    <ul>
-                        <li>Reliable information</li>
-                        <li>Reliable directions</li>
-                        <li>Straightforward</li>
-                        <li>Reviews/Ratings</li>
-                    </ul>
+            <div class="container">
+              <br />
+              <br />
+              <div class="hr"></div>
+              <h3>Synthesis</h3>
+              <div class="quote">
+                <em
+                  >"I don't want the world to know me, I want to know the
+                  world."</em
+                >
+                <br />
+              </div>
+              <div class="row">
+                <div class="column col-md-6 col-lg-5">
+                  <!-- open first column (used for text) -->
+                  <h4>Frustrations</h4>
+                  <ul>
+                    <li>Not structured well</li>
+                    <li>Confusing</li>
+                    <li>Too much information</li>
+                    <li>Ads</li>
+                    <li>Bad directions</li>
+                  </ul>
+                  <h4>Needs</h4>
+                  <ul>
+                    <li>Reliable information</li>
+                    <li>Reliable directions</li>
+                    <li>Straightforward</li>
+                    <li>Reviews/Ratings</li>
+                  </ul>
                 </div>
-                <div class="column col-md-6 col-lg-7"><!-- open second column (used for text) -->
-                    <picture>
-                        <source srcset="img/outdoorsy/mockup1.png" media="(max-width:767px)">
-                        <img src="img/outdoorsy/mockup1.png" alt="mockup">
-                    </picture>
+                <div class="column col-md-6 col-lg-7">
+                  <!-- open second column (used for text) -->
+                  <picture>
+                    <source
+                      srcset="img/outdoorsy/mockup1.png"
+                      media="(max-width:767px)"
+                    />
+                    <img src="img/outdoorsy/mockup1.png" alt="mockup" />
+                  </picture>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="container">
-            <h2>User Flow</h2>
-            <picture>
-                <source srcset="img/outdoorsy/user-flow.svg" media="(max-width:767px)">
-                <img src="img/outdoorsy/user-flow.svg" alt="User Flow">
-            </picture>
-        </div>
-        <div class="container">
-            <h2>Wireframes</h2>
-            <picture>
-                <source srcset="img/outdoorsy/wireframes.png" media="(max-width:767px)">
-                <img src="img/outdoorsy/wireframes.png" alt="Low Fidelity Wireframes">
-            </picture>
-        </div>
-        <div class="container">
-            <h2>Prototyping</h2>
-            <p>I prototyped the user flows using the drawn wireframes and performed user testing.</p>
-            <picture>
-                <source srcset="img/outdoorsy/prototyping.png" media="(max-width:767px)">
-                <img src="img/outdoorsy/prototyping.png" alt="Protoyping Image">
-            </picture>
-        </div>
-        <div class="container">
-            <div class="center">
+            <div class="container">
+              <h2>User Flow</h2>
+              <picture>
+                <source
+                  srcset="img/outdoorsy/user-flow.svg"
+                  media="(max-width:767px)"
+                />
+                <img src="img/outdoorsy/user-flow.svg" alt="User Flow" />
+              </picture>
+            </div>
+            <div class="container">
+              <h2>Wireframes</h2>
+              <picture>
+                <source
+                  srcset="img/outdoorsy/wireframes.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/outdoorsy/wireframes.png"
+                  alt="Low Fidelity Wireframes"
+                />
+              </picture>
+            </div>
+            <div class="container">
+              <h2>Prototyping</h2>
+              <p>
+                I prototyped the user flows using the drawn wireframes and
+                performed user testing.
+              </p>
+              <picture>
+                <source
+                  srcset="img/outdoorsy/prototyping.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/outdoorsy/prototyping.png"
+                  alt="Protoyping Image"
+                />
+              </picture>
+            </div>
+            <div class="container">
+              <div class="center">
                 <h3>Try a Prototype</h3>
-                        <p><a href="https://www.figma.com/proto/4mQpO83uaDyaz7O8KAt2tS/2.9?page-id=24%3A70&type=design&node-id=24-158&viewport=
-                            -176%2C469%2C0.27&t=a54dUE2vAQMzwD5D-1&scaling=scale-down&starting-point-node-id=24%3A158&mode=design"
-                            target="_blank">Low-fidelity</a>
-                        </p>
-                        <p>
-                        <a href="https://www.figma.com/proto/Owh7t7n8J76PzoWcZA3oWU/Outdoorsy?page-id=709%3A1199&type=design&node-id=
-                            709-1596&viewport=591%2C483%2C0.24&t=4S4b1o5tJIuz1yf4-1&scaling=min-zoom&starting-point-node-id=709%3A1596&mode=design"
-                            target="_blank">High-fidelity</a>
-                        </p>
+                <p>
+                  <a
+                    class="a-p"
+                    href="https://www.figma.com/proto/4mQpO83uaDyaz7O8KAt2tS/2.9?page-id=24%3A70&type=design&node-id=24-158&viewport=-176%2C469%2C0.27&t=a54dUE2vAQMzwD5D-1&scaling=scale-down&starting-point-node-id=24%3A158&mode=design"
+                    target="_blank"
+                    >Low-fidelity</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="a-p"
+                    href="https://www.figma.com/proto/Owh7t7n8J76PzoWcZA3oWU/Outdoorsy?page-id=709%3A1199&type=design&node-id=709-1596&viewport=591%2C483%2C0.24&t=4S4b1o5tJIuz1yf4-1&scaling=min-zoom&starting-point-node-id=709%3A1596&mode=design"
+                    target="_blank"
+                    >High-fidelity</a
+                  >
+                </p>
+              </div>
+              <div class="hr"></div>
             </div>
-            <div class="hr"></div>
-        </div>
-        <div class="container">
-            <h3>Feedback and Corrections</h3>
-            <div class="row"><!-- open row that holds (2) columns  -->
-                <div class="column col-md-6 col-lg-5"><!-- open first column (used for image) -->
-                    <br>
-                    Problem:
-                    <br>
-                    Confusion about how to save a location
-                    <br>
-                    <br>
-                    Solution:
-                    <br>
-                    Change the icon from a heart to a bookmark
-                    </br>
+            <div class="container">
+              <h3>Feedback and Corrections</h3>
+              <div class="row">
+                <!-- open row that holds (2) columns  -->
+                <div class="column col-md-6 col-lg-5">
+                  <!-- open first column (used for image) -->
+                  <br />
+                  Problem:
+                  <br />
+                  Confusion about how to save a location
+                  <br />
+                  <br />
+                  Solution:
+                  <br />
+                  Change the icon from a heart to a bookmark
                 </div>
-                <div class="column col-md-6 col-lg-7"><!-- open second column (used for image) -->
-                    <picture>
-                        <source srcset="img/outdoorsy/lf-wireframes-feedback.png" media="(max-width:767px)">
-                        <img class="mockup2" src="img/outdoorsy/lf-wireframes-feedback.png" alt="Feedback and corrections image">
-                    </picture>
+                <div class="column col-md-6 col-lg-7">
+                  <!-- open second column (used for image) -->
+                  <picture>
+                    <source
+                      srcset="img/outdoorsy/lf-wireframes-feedback.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="mockup2"
+                      src="img/outdoorsy/lf-wireframes-feedback.png"
+                      alt="Feedback and corrections image"
+                    />
+                  </picture>
                 </div>
-            </div><!--end row-->
-            <div class="row"><!-- open row that holds (2) columns  -->
-                <div class="column col-md-6 col-lg-5"><!-- open first column (used for image) -->
-                    <br>
-                    Problem:
-                    <br>
-                    Icons at th head of the screen are confusing
-                    <br>
-                    <br>
-                    <strong>Solution:</strong>
-                    <br>
-                    Added a colored bar to more clearly define the space
+              </div>
+              <!--end row-->
+              <div class="row">
+                <!-- open row that holds (2) columns  -->
+                <div class="column col-md-6 col-lg-5">
+                  <!-- open first column (used for image) -->
+                  <br />
+                  Problem:
+                  <br />
+                  Icons at th head of the screen are confusing
+                  <br />
+                  <br />
+                  <strong>Solution:</strong>
+                  <br />
+                  Added a colored bar to more clearly define the space
                 </div>
-                <div class="column col-md-6 col-lg-7"><!-- open second column (used for image) -->
-                    <picture>
-                        <source srcset="img/outdoorsy/mf-wireframes-feedback.png" media="(max-width:767px)">
-                        <img class="mockup2" src="img/outdoorsy/mf-wireframes-feedback.png" alt="Feedback and corrections image">
-                    </picture>
+                <div class="column col-md-6 col-lg-7">
+                  <!-- open second column (used for image) -->
+                  <picture>
+                    <source
+                      srcset="img/outdoorsy/mf-wireframes-feedback.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="mockup2"
+                      src="img/outdoorsy/mf-wireframes-feedback.png"
+                      alt="Feedback and corrections image"
+                    />
+                  </picture>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="container">
-            <h2>Style Guide</h2>
-            <br>
-            <picture>
-                <source srcset="img/outdoorsy/styleguide.png" media="(max-width:767px)">
-                <img src="img/outdoorsy/styleguide.png" alt="Style guide image">
-            </picture>
-            <h3>Imagery</h3>
-            <p>
-                Images have many blue and green colors connecting wth the color palette
-                and creating unity. They have a bright tone for an outdoor feeling. For specific categories they
-                have images of people engaging in the category activity to help users connect with the location and
-                activity.
-            </p>
-            <picture>
-                <source srcset="img/outdoorsy/imagery.png" media="(max-width:767px)">
-                <img src="img/outdoorsy/imagery.png" alt="Style guide image">
-            </picture>
-        </div>
-        <div class="container">
-            <h2>Outcomes and Lessons</h2>
-            <h3>What went well?</h3>
-            <p>Feedback from user interviews really helped me determine preference which were a great starting off point
-                in the design process.
-                It helped me prioritize the endless amount of options a designer is faced with and helped me focus on
-                aspects that are the most
-                relevant to the users needs. Testing the wireframes early on in the design process helped me determine
-                difficulties that can be resolved
-                in advance of them becoming bigger issues.
-            </p>
-            <strong>Skills:</strong> User reasearch and testing, analytical thinking
-            <br>
-            <strong>Processes:</strong> User-centered design
-            <br>
-            <strong>Solution:</strong> Continue to involve users in the design process throughout the project
-            <br>
-            <br>
-            <h3>What didn't go well?</h3>
-            <p>I struggled with translating the wire-frames into the prototype. I had a couple of iterations for several
-                screens and had a hard time
-                deciding which ones were the best options for the prototype. Some of the ones I picked were not fully
-                thought out or consistent in design.
-                When I plugged them into the prototype there were areas that were awkward and I had to make changes in
+            <div class="container">
+              <h2>Style Guide</h2>
+              <br />
+              <picture>
+                <source
+                  srcset="img/outdoorsy/styleguide.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/outdoorsy/styleguide.png"
+                  alt="Style guide image"
+                />
+              </picture>
+              <h3>Imagery</h3>
+              <p>
+                Images have many blue and green colors connecting wth the color
+                palette and creating unity. They have a bright tone for an
+                outdoor feeling. For specific categories they have images of
+                people engaging in the category activity to help users connect
+                with the location and activity.
+              </p>
+              <picture>
+                <source
+                  srcset="img/outdoorsy/imagery.png"
+                  media="(max-width:767px)"
+                />
+                <img src="img/outdoorsy/imagery.png" alt="Style guide image" />
+              </picture>
+            </div>
+            <div class="container">
+              <h2>Outcomes and Lessons</h2>
+              <h3>What went well?</h3>
+              <p>
+                Feedback from user interviews really helped me determine
+                preference which were a great starting off point in the design
+                process. It helped me prioritize the endless amount of options a
+                designer is faced with and helped me focus on aspects that are
+                the most relevant to the users needs. Testing the wireframes
+                early on in the design process helped me determine difficulties
+                that can be resolved in advance of them becoming bigger issues.
+              </p>
+              <strong>Skills:</strong> User reasearch and testing, analytical
+              thinking
+              <br />
+              <strong>Processes:</strong> User-centered design
+              <br />
+              <strong>Solution:</strong> Continue to involve users in the design
+              process throughout the project
+              <br />
+              <br />
+              <h3>What didn't go well?</h3>
+              <p>
+                I struggled with translating the wire-frames into the prototype.
+                I had a couple of iterations for several screens and had a hard
+                time deciding which ones were the best options for the
+                prototype. Some of the ones I picked were not fully thought out
+                or consistent in design. When I plugged them into the prototype
+                there were areas that were awkward and I had to make changes in
                 order for the prototype to flow correctly.
-            </p>
-            <strong>Skills:</strong> Exploratory sketches, wire-framing, prototyping, rapid ideation
-            <br>
-            <strong>Processes:</strong> Crazy 8’s, brainstorming
-            <br>
-            <strong>Skills Gap:</strong> Consistency, focus
-            <br>
-            <strong>Solutions:</strong>
-            <ul>
+              </p>
+              <strong>Skills:</strong> Exploratory sketches, wire-framing,
+              prototyping, rapid ideation
+              <br />
+              <strong>Processes:</strong> Crazy 8’s, brainstorming
+              <br />
+              <strong>Skills Gap:</strong> Consistency, focus
+              <br />
+              <strong>Solutions:</strong>
+              <ul>
                 <li>Watch tutorials on this aspect of the design process</li>
                 <li>Practice various rapid ideation techniques</li>
-                <li>Explore and practice different strategies for brainstorming and sketching</li>
-            </ul>
-            <h3>What can be improved?</h3>
-            <p>I had some difficulty with determining the MVP and JTBD for the project and putting thoughts into words.
-                As new concepts for me, I struggled with
-                honing in on the key aspects of the task while trying to grasp the concept. At first everything was very
+                <li>
+                  Explore and practice different strategies for brainstorming
+                  and sketching
+                </li>
+              </ul>
+              <h3>What can be improved?</h3>
+              <p>
+                I had some difficulty with determining the MVP and JTBD for the
+                project and putting thoughts into words. As new concepts for me,
+                I struggled with honing in on the key aspects of the task while
+                trying to grasp the concept. At first everything was very
                 abstract and it took some time for me to gain some focus.
-            </p>
-            <strong>Skills:</strong> Gathering requirements, determining JTBD, and defining an MVP
-            <br>
-            <strong>Processes:</strong> JTBD structure and MVP development
-            <br>
-            <strong>Skills Gap:</strong> Communication, organization of thoughts
-            <br>
-            <strong>Solutions:</strong>
-            <ul>
+              </p>
+              <strong>Skills:</strong> Gathering requirements, determining JTBD,
+              and defining an MVP
+              <br />
+              <strong>Processes:</strong> JTBD structure and MVP development
+              <br />
+              <strong>Skills Gap:</strong> Communication, organization of
+              thoughts
+              <br />
+              <strong>Solutions:</strong>
+              <ul>
                 <li>Read articles about strategies for this process</li>
                 <li>Study examples</li>
-                <li>Develop a consistent vocabulary to be used during this process</li>
+                <li>
+                  Develop a consistent vocabulary to be used during this process
+                </li>
                 <li>Create visual diagrams of my thought process</li>
-            </ul>
-        </div>
-        <div class="container">
-            <picture>
-                <source srcset="img/outdoorsy/maps.png" media="(max-width:767px)">
-                <img src="img/outdoorsy/maps.png" alt="map background">
-            </picture>
-        </div>
-        <div>
-            <div class="container">
-                <h2>Design</h2>
-                <p>Designed for all platforms so users can find their place outdoors from anywhere</p>
-                <picture>
-                    <source srcset="img/outdoorsy/responsive.png" media="(max-width:767px)">
-                    <img src="img/outdoorsy/responsive.png" alt="responsive mockups">
-                </picture>
+              </ul>
             </div>
+            <div class="container">
+              <picture>
+                <source
+                  srcset="img/outdoorsy/maps.png"
+                  media="(max-width:767px)"
+                />
+                <img src="img/outdoorsy/maps.png" alt="map background" />
+              </picture>
+            </div>
+            <div>
+              <div class="container">
+                <h2>Design</h2>
+                <p>
+                  Designed for all platforms so users can find their place
+                  outdoors from anywhere
+                </p>
+                <picture>
+                  <source
+                    srcset="img/outdoorsy/responsive.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/outdoorsy/responsive.png"
+                    alt="responsive mockups"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <div class="row">
-                <h2>Get in Touch</h2>
-                <p>
-                    Do you like my work and want to discuss ideas? Please get in touch!
-                </p>
-                <p>
-                    <a href="mailto:schroed.jenn@gmail.com" class="button contact">Send me an email</a>
-                <p>
-                    Call:
-                    <a href="tel:+5126805366">+5126805366</a>
-                </p>
-                <div>
-                    <a href="https://www.linkedin.com/in/jennifer-schroeder-789b2613/" target="_blank">
-                        <img class="social" src="img/linkedinicon.svg" alt="linkedin">
-                    </a>
-                    <a href="FACEBOOK-URL" target="_blank">
-                        <img class="social" src="img/facebookicon.svg" alt="placeholder">
-                    </a>
-                    <a href="INSTAGRAM-URL" target="_blank">
-                        <img class="social" src="img/instagramicon.svg" alt="instagram">
-                    </a>
-                    <a href="https://www.behance.net/JenniferSchroeder" target="_blank">
-                        <img class="social" src="img/behanceicon-white.svg" alt="behance">
-                    </a>
-                </div>
-                    <p center>Copyright Jennifer Schroeder 2023-2024</p>
-            </div>
+      <div class="container">
+        <div class="row">
+          <h2>Get in Touch</h2>
+          <p>
+            Do you like my work and want to discuss ideas? Please get in touch!
+          </p>
+          <p>
+            <a href="mailto:schroed.jenn@gmail.com" class="button contact"
+              >Send me an email</a
+            >
+          </p>
+          <p>
+            Call:
+            <a href="tel:+5126805366">+5126805366</a>
+          </p>
         </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/jennifer-schroeder-789b2613/"
+            target="_blank"
+          >
+            <img class="social" src="img/linkedinicon.svg" alt="linkedin" />
+          </a>
+          <a href="FACEBOOK-URL" target="_blank">
+            <img class="social" src="img/facebookicon.svg" alt="placeholder" />
+          </a>
+          <a href="INSTAGRAM-URL" target="_blank">
+            <img class="social" src="img/instagramicon.svg" alt="instagram" />
+          </a>
+          <a href="https://www.behance.net/JenniferSchroeder" target="_blank">
+            <img class="social" src="img/behanceicon-white.svg" alt="behance" />
+          </a>
+        </div>
+        <p>Copyright Jennifer Schroeder 2023-2024</p>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

@@ -10,39 +10,24 @@ header {
   background-color: #F9F7F2;
   padding: 0px;
   margin: 0px;
+}
 
-  .css-box-shadow {
-    width: [object Object]px;
-    height: [object Object]px;
-    background:  #000;
-    border: solid #BDBDBD 1px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  }
+.css-box-shadow {
+  width: 100%;
+  height: auto;
+  background: #000;
+  border: solid #bdbdbd 1px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 main {
   padding-top: 0px;
 }
 
-#outdoorsy-main {
-  font-family: 'Urbanist', sans-serif;
-}
-#outdoorsy-main h2 {
-  font-weight: 200;
-  padding-left: 0px;
-}
-.top{
+.top {
   padding-top: 220px;
-}
-
-#outdoorsy-main h2::before {
-  content: "";
-  display: block;
-  width: 100px;
-  padding-top: 30px;
-  border-bottom: 2px solid #C84F09;
 }
 
 .social {
@@ -68,7 +53,7 @@ h4 {
 }
 
 h1 {
-  font-size: 2.3.em;
+  font-size: 2.3em;
   font-weight: 500;
   padding-top: 40px;
 }
@@ -167,10 +152,14 @@ a {
   text-decoration: none;
   /* No underlining */
 }
+.a-p {
+  color: #000;
+  text-decoration: none;
+}
 
 a:visited {
   /* visited link */
-  color: gray;
+  color: #808080;
   border: gray;
 }
 
@@ -181,7 +170,6 @@ a:hover {
 }
 
 a:active {
-  selected link 
   color: #994c30;
 }
 
@@ -224,22 +212,25 @@ nav>ul>li>a {
   padding-right: 20px;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid lightgray;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-/* trying to animate navigation 
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+/* trying to animate navigation
 
 a li:after,
 a li:before {
@@ -321,6 +312,7 @@ a li:hover::before {
   text-align: center;
   font-size: 2em;
   padding-top: 220px;
+  background-color: white;
   /* Centers text */
 }
 
@@ -334,7 +326,7 @@ a li:hover::before {
 }
 
 #hero {
-  background-color:#F9F7F2
+  background-color:#fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -349,24 +341,42 @@ a li:hover::before {
   height: auto;
 }
 
+/*Outdoorsy*/
+#outdoorsy-main {
+  font-family: 'Urbanist', sans-serif;
+}
+
+#outdoorsy-main h2 {
+  font-weight: 200;
+  padding-left: 0px;
+}
+
+#outdoorsy-main h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  padding-top: 30px;
+  border-bottom: 2px solid #C84F09;
+}
+
 .mockup {
   width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 75px;
+  padding-left: 30px;
   padding-top: 100px;
 }
 
 .mockup1 {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-top: 30px;
+  padding-left: 0px;
+  padding-top: 150px;
 }
 
 .mockup2 {
@@ -378,11 +388,29 @@ a li:hover::before {
   padding-left: 20px;
 }
 
+#outdoorsy-main h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  padding-top: 30px;
+  border-bottom: 2px solid #C84F09;
+}
+
+
 /*.outdoorsy {
   padding-bottom: 8px;
   margin-bottom: 8px;
   border-top: solid 1px #C84F09;
 }*/
+
+/*space*/
+#space-main {
+  font-family: 'Lato', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+  background-color: #FDFCF6;
+  color: #162A2C;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -451,6 +479,35 @@ Medium devices (640px and larger)
 
   #about-page h3 {
     margin-top: 0;
+  }
+
+  .mockup {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 75px;
+    padding-top: 100px;
+  }
+  
+  .mockup1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-top: 150px;
+  }
+  
+  .mockup2 {
+    width: 65%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
   }
 }
 

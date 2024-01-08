@@ -509,6 +509,14 @@ Medium devices (640px and larger)
     margin-right: auto;
     padding-left: 20px;
   }
+
+  #hero h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 220px;
+    background-color: white;
+  }
+  
 }
 
 .top {

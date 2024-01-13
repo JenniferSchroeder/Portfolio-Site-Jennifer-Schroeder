@@ -7,7 +7,7 @@ colors used
 header {
   position: fixed;
   width: 100%;
-  background-color: #F9F7F2;
+  background-color: black;
   padding: 0px;
   margin: 0px;
 }
@@ -16,7 +16,7 @@ header {
   width: 100%;
   height: auto;
   background: #000;
-  border: solid #bdbdbd 1px;
+  border: solid black 1px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
@@ -27,7 +27,7 @@ main {
 }
 
 .top {
-  padding-top: 120px;
+  padding-top: 140px;
 }
 
 .social {
@@ -136,7 +136,7 @@ img {
 }  This was my attempt at animating the nav*/
 
 .button.contact {
-  background-color: #737575;
+  background-color: #808080;
   color: #fff;
   text-transform: uppercase;
   border: 2px solid #fff;
@@ -160,7 +160,7 @@ a {
 a:visited {
   /* visited link */
   color: #808080;
-  border: gray;
+  border: #808080;
 }
 
 a:hover {
@@ -219,7 +219,7 @@ nav>ul>li>a {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #d3d3d3;
 }
 
 .navtoggle.responsive li:last-child {
@@ -286,7 +286,7 @@ a li:hover::before {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid #808080;
 }
 
 #work .row-space {
@@ -520,7 +520,7 @@ Medium devices (640px and larger)
 }
 
 .top {
-  padding-top: 140px;
+  padding-top: 220px;
 }
 
 

@@ -411,6 +411,9 @@ a li:hover::before {
   color: #162A2C;
   font-size: 1.35em;
 }
+#space-main body {
+  font-size: 1.35em;
+}
 
 
 /* ==============================

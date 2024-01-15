@@ -158,6 +158,12 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: #808080;
+}
+
+
+
 a:visited {
   /* visited link */
   color: #808080;

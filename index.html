@@ -18,6 +18,10 @@
       src="https://kit.fontawesome.com/45aa0c0791.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8" />
     <meta name="author" content="Jennifer Schroeder" />
     <meta name="description" content="Short description using keywords" />
@@ -68,70 +72,59 @@
         <section id="work">
           <div class="container">
             <h2>My Work</h2>
-            <div class="row">
-              <!-- open row that holds (2) columns for project -->
-              <div class="column col-md-6 col-lg-5">
-                <!-- open first column (used for image) -->
-                <picture>
-                  <source
-                    srcset="img/outdoorsy/outdoorsycover2.png"
-                    media="(max-width:767px)"
-                  />
-                  <img
-                    src="img/outdoorsy/outdoorsycover2.png"
-                    alt="outdoorsy cover"
-                  />
-                </picture>
-              </div>
-              <!-- end first column -->
-              <div class="column col-md-6 col-lg-7">
-                <!-- open second column (used for text) -->
-                <h3>Outdoorsy</h3>
-                <p>
-                  Outdoorsy is a responsive web app that uses location to
-                  suggest outdoor activities to the user.
-                </p>
-                <p>
-                  Skills used: Competative Analysis, User Research and
-                  Personas, Wireframing, Usability Testing, Prototyping,
-                  Responsive Design.
-                </p>
-                <a href="outdoorsy.html" class="button">View project</a>
-              </div>
-              <!-- end second column -->
-            </div>
-            <!-- end row that holds (2) columns for project -->
-            <div class="row row-space">
-              <!-- open row that holds (2) columns for project -->
-              <div class="column col-md-6 col-lg-5">
-                <!-- open first column (used for image) -->
-                <picture>
-                  <source
-                    srcset="img/space/spacecover2.jpg"
-                    media="(max-width:767px)"
-                  />
-                  <img src="img/space/spacecover2.jpg" alt="Space Cover" />
-                </picture>
-              </div>
-              <!-- end first column -->
-              <div class="column col-md-6 col-lg-7">
-                <!-- open second column (used for text) -->
-                <h3>Space</h3>
-                <p>
-                  Space is an online home decor store that brings ease of
-                  shopping for your space without losing the aesthetics of its
-                  products.
-                </p>
-                <p>
-                  Skills used: Usability Testing, Wireframing, Prototyping,
-                  Animation
-                </p>
-                <a href="space.html" class="button">View project</a>
-              </div>
-              <!-- end second column -->
-            </div>
-            <!-- end row that holds (2) columns for project -->
-          </div>
+                <div class="owl-carousel">
+                    <div>
+                        <picture>
+                        <source
+                            srcset="img/outdoorsy/outdoorsycover2.png"
+                            media="(max-width:767px)"
+                        />
+                        <img
+                            src="img/outdoorsy/outdoorsycover2.png"
+                            alt="outdoorsy cover"
+                        />
+                        </picture>
+                    </div>
+                    <div>
+                            <h3>Outdoorsy</h3>
+                        <p>
+                        Outdoorsy is a responsive web app that uses location to
+                        suggest outdoor activities to the user.
+                        </p>
+                        <p>
+                        Skills used: Competative Analysis, User Research and
+                        Personas, Wireframing, Usability Testing, Prototyping,
+                        Responsive Design.
+                        </p>
+                        <a href="outdoorsy.html" class="button">View project</a>
+                    </div>
+                    <div>
+                        <picture>
+                        <source
+                            srcset="img/space/spacecover2.jpg"
+                            media="(max-width:767px)"
+                        />
+                        <img src="img/space/spacecover2.jpg" alt="Space Cover" />
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Space</h3>
+                        <p>
+                        Space is an online home decor store that brings ease of
+                        shopping for your space without losing the aesthetics of its
+                        products.
+                        </p>
+                        <p>
+                        Skills used: Usability Testing, Wireframing, Prototyping,
+                        Animation
+                        </p>
+                        <a href="space.html" class="button">View project</a>
+                    </div>
+                    
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+        </div>
+        </div>
         </section>
       </div>
     </main>
@@ -176,5 +169,18 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/scripts.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                $(document).ready(function(){
+                $(".owl-carousel").owlCarousel();
+                });
+            </script>
   </body>
 </html>

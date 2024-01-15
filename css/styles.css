@@ -153,15 +153,16 @@ a {
   text-decoration: none;
   /* No underlining */
 }
+
 .a-p {
   color: #000;
   text-decoration: none;
 }
 
 a:visited {
-  /* visited link */
+  /* visited link 
   color: #808080;
-  border: #808080;
+  border: #808080;*/
 }
 
 a:hover {
@@ -177,8 +178,15 @@ a:active {
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration:underline;
+  text-decoration: none;
   transition: all;
+  font-size: larger;
+  transition: all 400ms;
+}
+
+.footer-icons .a:hover,
+.a:focus {
+  text-decoration: none;
 }
 
 /* Navigtion Styling */
@@ -602,6 +610,11 @@ X-large devices (1440px or larger)
 [class*="col-"] {
   float: left;
   padding: 10px;
+}
+
+.footer-icons.a:hover,
+.a:focus {
+  text-decoration: none;
 }
 
 @keyframes color-change {

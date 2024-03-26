@@ -75,8 +75,9 @@ h4 {
 	font-weight: 400;
 }
 
-.swiper {
-}
+/* .swiper {
+
+} */
 
 .center {
 	text-align: center;
@@ -161,11 +162,10 @@ a {
 	text-decoration: none;
 }
 
-a:visited {
-	/* visited link 
+/* a:visited {
   color: #808080;
-  border: #808080;*/
-}
+  border: #808080;
+} */
 
 a:hover {
 	color: #cc6540;
@@ -297,7 +297,6 @@ a li:hover::before {
 
 #work .row {
 	padding-bottom: 25px;
-	border-bottom: 1px solid #808080;
 }
 
 /* #work .row-space {
